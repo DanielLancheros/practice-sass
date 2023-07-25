@@ -1,0 +1,18 @@
+$main-color: aqua;
+$secondary-color: darkblue;
+$third-color: crimson;
+$fourth-color: blueviolet;
+$border-width: 2px;
+$border-property: 2px dashed red;
+
+body {
+  background-color: $main-color;
+  color: $secondary-color;
+}
+
+h1 {
+  border: $border-property;
+}
+h2 {
+  background-color: $fourth-color;
+}
