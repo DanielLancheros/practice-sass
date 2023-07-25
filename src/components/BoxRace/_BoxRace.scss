@@ -11,7 +11,7 @@
     font-weight: 800;
 
     position: relative;
-    animation: boxraceAnimation 12s linear 0.5s normal infinite;
+    animation: boxraceAnimation 8s linear 0.5s normal infinite;
 
     /*
        * boxraceanimation: animation name
@@ -33,5 +33,19 @@
         - alternate-reverse
        * infinite: iteration count
     */
+  }
+
+  .race-linear      { animation-timing-function: linear; }
+  .race-ease        { animation-timing-function: ease; }
+  .race-ease-in     { animation-timing-function: ease-in; }
+  .race-ease-out    { animation-timing-function: ease-out; }
+  .race-ease-in-out { animation-timing-function: ease-in-out; }
+
+  @keyframes boxraceAnimation {
+    0%    { left: 0%; }
+    25%   { left: 25%; }
+    50%   { left: 50%; }
+    75%   { left: 75%; }
+    100%  { left: 100%; }
   }
 }
